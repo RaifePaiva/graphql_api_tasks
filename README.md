@@ -1,6 +1,6 @@
 # GraphQL com Springboot
 
-Este projeto tem como objetivo demonstrar a utilização do GraphQL com Springboot. O exemplo utilizado é um CRUD de simulando um pequeno sistema de de gerenciamento de tarefas.
+Este projeto tem como objetivo demonstrar a utilização do GraphQL com Springboot. O exemplo utilizado é um CRUD simulando um pequeno sistema de gerenciamento de tarefas.
 
 ## Tecnologias utilizadas
 

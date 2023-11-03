@@ -1,0 +1,44 @@
+type Mutation {
+
+    createTask(task: TaskInput): Task
+    completeTask(id: ID!): Task
+    updateTask(id: ID!, task: TaskInput): Task
+    deleteTask(id: ID!): Response
+}
+
+type Query {
+    getAllTasks: [Task]
+    getTask(id: ID!): Task
+    getAllTasksByStatus(status: Status!): [Task]
+    getAllUsers: [User]
+}
+
+enum Status {
+    IN_PROGRESS
+    DONE
+}
+
+type Response {
+    success: Boolean!
+    message: String!
+}
+
+input TaskInput {
+    title: String!
+    description: String!
+    userId: ID!
+}
+
+type User {
+    name: String!
+    email: String!
+}
+
+type Task {
+    id: ID!
+    title: String!
+    description: String!
+    status: String!
+    createdAt: String!
+    user: User!
+}
